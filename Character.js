@@ -21,6 +21,14 @@ var toretto = new Piloto("Toretto:", 150);
 var relampago = new Piloto("Relampago Marquinhos", 160);
 var ayrton = new Piloto("Ayrton:", 170);
 var fuga = new Piloto("Piloto de Fuga:", 180);
+function erro() {
+    console.log();
+    console.log("Velocidade Mínima:");
+    console.log("Fácil: 150");
+    console.log("Normal: 175");
+    console.log("Difícil: 200");
+    console.log("Hardcore: 250");
+}
 while (true) {
     console.clear();
     console.log("=====================================");
@@ -148,6 +156,7 @@ while (true) {
             }
             else {
                 console.log("Vixeee, Torreto perdeu!");
+                erro();
             }
         }
         else if (dados[0] == "Relâmpago Marquinhos") {
@@ -157,6 +166,7 @@ while (true) {
             }
             else {
                 console.log("Vixeee, Rel\u00E2mpago Marquinhos perdeu!");
+                erro();
             }
         }
         else if (dados[0] == "Ayrton Senna") {
@@ -166,6 +176,7 @@ while (true) {
             }
             else {
                 console.log("Vixeee, Ayrton Senna perdeu!");
+                erro();
             }
         }
         else if (dados[0] == "Piloto de Fuga") {
@@ -175,6 +186,7 @@ while (true) {
             }
             else {
                 console.log("Vixeee, Piloto de Fuga perdeu!");
+                erro();
             }
         }
     }

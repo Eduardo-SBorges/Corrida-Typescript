@@ -15,6 +15,15 @@ const relampago: Piloto = new Piloto("Relampago Marquinhos", 160);
 const ayrton: Piloto = new Piloto("Ayrton:", 170);
 const fuga: Piloto = new Piloto("Piloto de Fuga:", 180);
 
+function erro() {
+    console.log();
+    console.log("Velocidade Mínima:");
+    console.log("Fácil: 150");
+    console.log("Normal: 175");
+    console.log("Difícil: 200");
+    console.log("Hardcore: 250");
+}
+
 while (true) {
     console.clear();
     console.log("=====================================");
@@ -144,6 +153,7 @@ while (true) {
                 console.log(`Parabéns, Torreto é o campeão!`);
             } else {
                 console.log(`Vixeee, Torreto perdeu!`);
+                erro();
             }
         } else if (dados[0] == "Relâmpago Marquinhos") {
             velocidadeTotal = relampago.velocidade / multiplicadorDificuldade;
@@ -151,6 +161,7 @@ while (true) {
                 console.log(`Parabéns, Relâmpago Marquinhos é o campeão!`);
             } else {
                 console.log(`Vixeee, Relâmpago Marquinhos perdeu!`);
+                erro();
             }
         } else if (dados[0] == "Ayrton Senna") {
             velocidadeTotal = ayrton.velocidade / multiplicadorDificuldade;
@@ -158,6 +169,7 @@ while (true) {
                 console.log(`Parabéns, Ayrton Senna é o campeão!`);
             } else {
                 console.log(`Vixeee, Ayrton Senna perdeu!`);
+                erro();
             }
         } else if (dados[0] == "Piloto de Fuga") {
             velocidadeTotal = fuga.velocidade / multiplicadorDificuldade;
@@ -165,6 +177,7 @@ while (true) {
                 console.log(`Parabéns, Piloto de Fuga é o campeão!`);
             } else {
                 console.log(`Vixeee, Piloto de Fuga perdeu!`);
+                erro();
             }
         }
     }
